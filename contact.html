@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Oshokayamhe Divine - AI Entrepreneur, Speaker & Mentor</title>
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAABu0lEQVR4nO2bsU7DMBCG/6oSA0JITLwBb8DAyMrKxNQLMDDxCj0JT8DAC/AEDEi8QSUmJiYkBAMSiIGhUqXS2nFsx+ckfNLfKW3i+Pv/2E5aAAAAAAAAAIBlI+kBOJZ0LOlI0r6k3banU7KrJF0APbvOSboCusDWtgfWgr2y3qukC+BC0hVwlnRJvJR0neQYGL0kXaVbSY8kLQDXwG7Sv0Tvkh7Ds6QrSS/AY7KjY7xKGiU9eqNt+SHpMenRM75KGic9evxJekh69IwfSY+e8SvpMfkZMMmBAUkPDowZlPQYnN8Bn8B2I+9+lSjTmwJ/BMb3+j0A48bef4pNoPH3R94XZXprYGKkvbGx9cYmPc/YuIa8nTOoyzugkRvddKnv0diPcW3/od59u6S+3X3734eh/d9uSf0T2x72H4bz/8NSv9/A/w/r1jfwNlrXyJvduvXO7VPbO2vR6PvdOrW74PpO/DQo0zsLxk7tJJR1eg/MjN7/RddCu/sl1+vrSdIoYX9Jp8n+N0i6SMB35PsBknSS9A2c0vv/A0kXwF0D734VSfcxfeQoqV99dOZ1AAAAAIAl4w+E3nSeVuAOHQAAAABJRU5ErkJggg==">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* Disable text selection */
+        * {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Allow selection in input fields if any */
+        input, textarea {
+            -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+            user-select: text;
+        }
+
+        :root {
+            --black: #0a0a0a;
+            --white: #fafafa;
+            --gray-50: #f5f5f5;
+            --gray-100: #e5e5e5;
+            --gray-200: #d4d4d4;
+            --gray-300: #a3a3a3;
+            --gray-400: #737373;
+            --gray-500: #525252;
+            --gray-600: #404040;
+            --gray-700: #262626;
+            --gray-800: #171717;
+            --gray-900: #0f0f0f;
+            --gold: #d4af37;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--black);
+            color: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 1.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+            color: var(--white);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 3rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: 0.01em;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .cta-nav {
+            padding: 0.8rem 2rem;
+            background: var(--white);
+            color: var(--black) !important;
+            border-radius: 3px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .cta-nav:hover {
+            background: var(--gold);
+            color: var(--black) !important;
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section with Full Background */
+        .hero-landing {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+
+
+        .hero-background img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .hero-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+
+        .hero-slide.active {
+            opacity: 1;
+            z-index: 1;
+        }
+
+
+        .hero-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+
+        .hero-slide.active {
+            opacity: 1;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(10, 10, 10, 0.7) 0%, rgba(10, 10, 10, 0.5) 100%);
+            z-index: 2;
+        }
+
+        .hero-content-landing {
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            max-width: 1200px;
+            padding: 2rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-eyebrow-landing {
+            font-size: 0.85rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .hero-title-landing {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            letter-spacing: -0.02em;
+            color: var(--gold);
+            text-transform: uppercase;
+        }
+
+        .hero-subtitle-landing {
+            font-size: clamp(1.2rem, 2vw, 1.5rem);
+            color: var(--white);
+            margin-bottom: 3rem;
+            font-weight: 400;
+            line-height: 1.6;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-cta {
+            display: inline-block;
+            padding: 1.2rem 3rem;
+            background: var(--white);
+            color: var(--black);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            border-radius: 3px;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-cta:hover {
+            background: var(--gold);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(212, 175, 55, 0.4);
+        }
+
+        /* Slider Dots */
+        .slider-dots {
+            position: absolute;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 1rem;
+            z-index: 3;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background: var(--white);
+            width: 30px;
+            border-radius: 6px;
+        }
+
+        /* About Me Page Section */
+        .about-me-page {
+            background: var(--white);
+            color: var(--black);
+        }
+
+        .about-hero {
+            background: var(--black);
+            color: var(--white);
+            padding: 8rem 2rem 6rem;
+            text-align: center;
+        }
+
+        .about-me-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 6vw, 5rem);
+            font-weight: 900;
+            letter-spacing: 0.05em;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-me-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+            color: var(--gray-300);
+        }
+
+        .about-detailed {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            padding: 6rem 0;
+            align-items: center;
+        }
+
+        .about-section-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            font-weight: 900;
+            margin-bottom: 2rem;
+            letter-spacing: -0.01em;
+        }
+
+        .about-detailed-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--gray-700);
+            margin-bottom: 1.5rem;
+        }
+
+        .about-detailed-content strong {
+            color: var(--black);
+            font-weight: 700;
+        }
+
+        .about-cta-button {
+            display: inline-block;
+            padding: 1.2rem 3rem;
+            background: var(--black);
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            margin-top: 2rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .about-cta-button:hover {
+            background: var(--gold);
+            color: var(--black);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-detailed-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 3px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Mission & Vision Cards */
+        .mission-vision-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            margin: 4rem 0;
+        }
+
+        .mission-card,
+        .vision-card {
+            padding: 3rem;
+            border: 2px solid var(--gold);
+            border-radius: 3px;
+            text-align: center;
+        }
+
+        .mv-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .mission-card h3,
+        .vision-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            letter-spacing: 0.05em;
+        }
+
+        .mission-card p,
+        .vision-card p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--gray-700);
+        }
+
+        /* Roles Banner */
+        .roles-banner {
+            background: var(--gold);
+            padding: 2rem 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .roles-marquee {
+            display: flex;
+            gap: 4rem;
+            white-space: nowrap;
+            animation: marquee 30s linear infinite;
+        }
+
+        .roles-marquee span {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--black);
+            letter-spacing: 0.1em;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Impact Stats */
+        .impact-stats {
+            padding: 8rem 2rem;
+            background: var(--white);
+            text-align: center;
+        }
+
+        .impact-subtitle {
+            font-size: 1.2rem;
+            color: var(--gray-600);
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .stat-box {
+            padding: 3rem 2rem;
+            background: var(--gray-50);
+            border: 2px solid var(--gray-200);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        .stat-box:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--black);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--gray-600);
+        }
+
+        /* About Section */
+        .about {
+            background: var(--white);
+            padding: 8rem 2rem;
+            color: var(--black);
+        }
+
+        .section-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 900;
+            margin-bottom: 3rem;
+            text-align: center;
+            letter-spacing: -0.02em;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: var(--gray-700);
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 3px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Startups Section */
+        .startups {
+            padding: 8rem 2rem;
+            background: var(--gray-50);
+            color: var(--black);
+        }
+
+        .startups .section-title {
+            color: var(--black);
+        }
+
+        .startup-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .startup-card {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 3px;
+            border: 1px solid var(--gray-200);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .startup-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--black) 0%, var(--gold) 100%);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        .startup-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .startup-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .startup-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            letter-spacing: -0.01em;
+        }
+
+        .startup-description {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--gray-600);
+            margin-bottom: 1.5rem;
+        }
+
+        .startup-metric {
+            display: inline-block;
+            background: var(--black);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            margin-top: 1rem;
+        }
+
+        .startup-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--black);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .startup-link:hover {
+            color: var(--gold);
+            letter-spacing: 0.05em;
+        }
+
+        /* Experience Section */
+        .experience {
+            padding: 8rem 2rem;
+            background: var(--black);
+            color: var(--white);
+        }
+
+        .experience .section-title {
+            color: var(--white);
+        }
+
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .experience-card {
+            padding: 2.5rem;
+            background: var(--gray-900);
+            border: 1px solid var(--gray-800);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        .experience-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+        }
+
+        .experience-role {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-company {
+            font-size: 1.1rem;
+            color: var(--gray-300);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .experience-description {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--gray-400);
+        }
+
+        /* Speaking Section */
+        .speaking {
+            padding: 8rem 2rem;
+            background: var(--white);
+            color: var(--black);
+        }
+
+        .speaking-topics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .topic-card {
+            background: var(--gray-50);
+            padding: 3rem 2rem;
+            text-align: center;
+            border: 1px solid var(--gray-200);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        .topic-card:hover {
+            border-color: var(--gold);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .topic-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .topic-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .topic-description {
+            font-size: 1rem;
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 8rem 2rem;
+            background: var(--gray-900);
+            color: var(--white);
+        }
+
+        .contact .section-title {
+            color: var(--white);
+        }
+
+        .contact-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-text {
+            font-size: 1.3rem;
+            line-height: 1.7;
+            color: var(--gray-300);
+            margin-bottom: 4rem;
+        }
+
+        /* Contact Info Cards Grid */
+        .contact-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            margin-bottom: 5rem;
+        }
+
+        .contact-info-card {
+            background: var(--white);
+            border: none;
+            border-radius: 10px;
+            padding: 5rem 3rem;
+            text-align: center;
+            text-decoration: none;
+            color: var(--black);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info-card.dark {
+            background: var(--black);
+            color: var(--white);
+        }
+
+        .contact-info-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-card-icon-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: var(--black);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin: 0 auto 2rem;
+        }
+
+        .contact-info-card.dark .contact-card-icon-circle {
+            background: var(--white);
+        }
+
+        .contact-info-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info-detail {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .contact-ctas {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .contact-card {
+            padding: 2.5rem 2rem;
+            background: var(--black);
+            border: 1px solid var(--gray-800);
+            border-radius: 3px;
+            text-align: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: var(--white);
+        }
+
+        .contact-card:hover {
+            background: var(--gold);
+            color: var(--black);
+            border-color: var(--gold);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.3);
+        }
+
+        .contact-card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-card-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-card-text {
+            font-size: 0.95rem;
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--black);
+            color: var(--white);
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .footer-tagline {
+            color: var(--gray-400);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-top: 1rem;
+        }
+
+        .footer-section h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: var(--gray-400);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--gray-800);
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--gray-500);
+            font-size: 0.9rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .social-links a {
+            color: var(--gray-400);
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--gold);
+            transform: translateY(-3px);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile Menu Styles */
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            z-index: 1001;
+            position: relative;
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 28px;
+            height: 2px;
+            background-color: var(--white);
+            transition: all 0.3s ease;
+            position: absolute;
+        }
+
+        .mobile-menu-btn span:first-child {
+            top: 14px;
+        }
+
+        .mobile-menu-btn span:last-child {
+            bottom: 14px;
+        }
+
+        .mobile-menu-btn.active span:first-child {
+            transform: rotate(45deg);
+            top: 50%;
+            margin-top: -1px;
+        }
+
+        .mobile-menu-btn.active span:last-child {
+            transform: rotate(-45deg);
+            bottom: 50%;
+            margin-bottom: -1px;
+        }
+
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100vh;
+            background: rgba(10, 10, 10, 0.98);
+            backdrop-filter: blur(20px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 999;
+            padding: 2rem;
+        }
+
+        .mobile-nav.active {
+            right: 0;
+        }
+
+        .mobile-nav li {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.3s ease;
+        }
+
+        .mobile-nav.active li {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .mobile-nav.active li:nth-child(1) { transition-delay: 0.1s; }
+        .mobile-nav.active li:nth-child(2) { transition-delay: 0.15s; }
+        .mobile-nav.active li:nth-child(3) { transition-delay: 0.2s; }
+        .mobile-nav.active li:nth-child(4) { transition-delay: 0.25s; }
+        .mobile-nav.active li:nth-child(5) { transition-delay: 0.3s; }
+        .mobile-nav.active li:nth-child(6) { transition-delay: 0.35s; }
+        .mobile-nav.active li:nth-child(7) { transition-delay: 0.4s; }
+
+        .mobile-nav a {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .mobile-nav .cta-nav {
+            font-size: 1.2rem;
+            padding: 1rem 2.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            /* Show mobile menu button, hide desktop nav */
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .nav-container > .nav-links {
+                display: none;
+            }
+
+            .about-detailed {
+                grid-template-columns: 1fr;
+            }
+
+            .mission-vision-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .startup-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .experience-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .speaking-topics {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-ctas {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .roles-marquee span {
+                font-size: 1.2rem;
+            }
+
+            .nav-container {
+                padding: 1.5rem 1.5rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero-title-landing {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle-landing {
+                font-size: 1rem;
+            }
+        }
+    </style>
+
+    <title>Contact - Matthew Oshokayamhe Divine</title>
+    <style>
+        /* Contact Page Hero */
+        .contact-hero {
+            background: var(--black);
+            padding: 10rem 2rem 6rem;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .contact-hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 7vw, 6rem);
+            font-weight: 900;
+            color: var(--white);
+            letter-spacing: 0.05em;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-hero-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            color: var(--gray-300);
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        
+
+        /* Adjust contact section for standalone page */
+        .contact {
+            background: var(--white);
+            color: var(--black);
+        }
+
+        .contact .section-title {
+            color: var(--black);
+        }
+
+        .contact-text {
+            color: var(--gray-600);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" style="text-decoration: none; color: inherit;"><div class="logo">MDO</div></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="empowerment.html">Empowerment</a></li>
+                <li><a href="index.html#startups">Startups</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://calendly.com/graceagent-info/intro-meeting-with-mdo" target="_blank" class="cta-nav">BOOKINGS</a></li>
+            </ul>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <ul class="nav-links mobile-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="empowerment.html">Empowerment</a></li>
+        <li><a href="index.html#startups">Startups</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://calendly.com/graceagent-info/intro-meeting-with-mdo" target="_blank" class="cta-nav">BOOKINGS</a></li>
+    </ul>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="section-container">
+            <h1 class="contact-hero-title">GET IN TOUCH</h1>
+            <p class="contact-hero-subtitle">Let's connect and create something amazing together. Reach out through any of the channels below.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <div class="contact-content">
+                <p class="contact-text">
+                    Whether you're looking to partner on innovative AI solutions, schedule a mentorship session, or book me for your next event—I'd love to hear from you.
+                </p>
+                
+                <!-- Contact Cards Grid -->
+                <div class="contact-cards-grid">
+                    <!-- WhatsApp Card -->
+                    <a href="https://wa.me/2349136374921" target="_blank" class="contact-info-card">
+                        <div class="contact-card-icon-circle">📱</div>
+                        <h3 class="contact-info-title">Chat Me</h3>
+                        <p class="contact-info-detail">+2349136374921</p>
+                    </a>
+                    
+                    <!-- LinkedIn Card -->
+                    <a href="https://www.linkedin.com/in/divine-matthew-mtd" target="_blank" class="contact-info-card">
+                        <div class="contact-card-icon-circle">💼</div>
+                        <h3 class="contact-info-title">LinkedIn</h3>
+                        <p class="contact-info-detail">Connect with me</p>
+                    </a>
+                    
+                    <!-- Instagram Card -->
+                    <a href="https://www.instagram.com/oshokayamhe/" target="_blank" class="contact-info-card dark">
+                        <div class="contact-card-icon-circle">📷</div>
+                        <h3 class="contact-info-title">Instagram</h3>
+                        <p class="contact-info-detail">@oshokayamhe</p>
+                    </a>
+                    
+                    <!-- TikTok Card -->
+                    <a href="https://tiktok.com/@oshokayamhe" target="_blank" class="contact-info-card">
+                        <div class="contact-card-icon-circle">🎵</div>
+                        <h3 class="contact-info-title">TikTok</h3>
+                        <p class="contact-info-detail">Follow my journey</p>
+                    </a>
+                </div>
+
+                <div class="contact-ctas">
+                    <a href="https://calendly.com/graceagent-info/intro-meeting-with-mdo" target="_blank" class="contact-card">
+                        <div class="contact-card-icon">🤝</div>
+                        <h3 class="contact-card-title">Partner with My Startups</h3>
+                        <p class="contact-card-text">Explore collaboration opportunities</p>
+                    </a>
+                    <a href="https://calendly.com/graceagent-info/intro-meeting-with-mdo" target="_blank" class="contact-card">
+                        <div class="contact-card-icon">📅</div>
+                        <h3 class="contact-card-title">Schedule Mentorship</h3>
+                        <p class="contact-card-text">One-on-one guidance for entrepreneurs</p>
+                    </a>
+                    <a href="https://calendly.com/graceagent-info/intro-meeting-with-mdo" target="_blank" class="contact-card">
+                        <div class="contact-card-icon">🎤</div>
+                        <h3 class="contact-card-title">Book for Speaking</h3>
+                        <p class="contact-card-text">AI, entrepreneurship, problem solving</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-brand">MDO</div>
+                    <p class="footer-tagline">
+                        AI Entrepreneur, Speaker & Mentor<br>
+                        Building the future of intelligent business automation.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#startups">My Startups</a></li>
+                        <li><a href="#speaking">Speaking</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Ventures</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://graceagent.co" target="_blank">GRACE AI</a></li>
+                        <li><a href="#contact">ProductPadi</a></li>
+                        <li><a href="https://kibonen.com" target="_blank">Kibonen</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Matthew Oshokayamhe Divine. All rights reserved.</p>
+                                                                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/divine-matthew-mtd" target="_blank" title="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/oshokayamhe/" target="_blank" title="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a 1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileNav = document.querySelector('.mobile-nav');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+            
+            // Toggle mobile menu
+            mobileMenuBtn.addEventListener('click', function() {
+                this.classList.toggle('active');
+                mobileNav.classList.toggle('active');
+                
+                // Lock/unlock body scroll
+                if (mobileNav.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            });
+            
+            // Close menu when clicking on a link
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenuBtn.classList.remove('active');
+                    mobileNav.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+            
+            // Close menu when clicking outside
+            mobileNav.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    mobileMenuBtn.classList.remove('
